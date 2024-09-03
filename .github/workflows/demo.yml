@@ -2,7 +2,7 @@ name: Deploy website
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   # test:
   #   runs-on: ubuntu-latest
@@ -56,4 +56,4 @@ jobs:
       - name: Output filename
         run: echo "${{ needs.build.outputs.script-file }}"
       - name: Deploy
-        run: echo "Deploying..."
+        run: echo "Deploying...
